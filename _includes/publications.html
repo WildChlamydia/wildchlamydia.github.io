@@ -1,14 +1,22 @@
 <div class="row g-5 mb-5">
   <div>
-    <h3 class="fw-bold border-bottom pb-3 mb-5">Publications</h3>
-    {% if page.title == "Home" %}
-      {% for item in site.data.publications.featured %}
-        <p><a href="{{ item.url }}">{{ item.name }}</a></p>
-      {% endfor %}
-    {% else %}
-      {% for item in site.data.publications.index %}
-        <p><a href="{{ item.url }}">{{ item.name }}</a></p>
-      {% endfor %}
-    {% endif %}
+    <h3 class="fw-bold border-bottom pb-3 mb-5">Related Work</h3>
+
+    <p><a href="https://arxiv.org/pdf/1702.03044.pdf">Real-Time Age and Gender Estimation with Transformers from Face
+        and Body Images in the Wild. Maksim Kuprashvich, Irina Tolstykh, SberDevices</a></p>
+    <br>
+
+    Please, cite us:
+
+    <pre class="highlight"><code>
+  @misc{lagnetwork,
+    title={Real-Time Age and Gender Estimation with Transformers from Face and Body Images in the Wild}, 
+    author={Maksim Kuprashevich and Irina Tolstykh},
+    year={2023},
+    eprint={0000.00000},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
+  }
+      </code></pre>
   </div>
 </div>

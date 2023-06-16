@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/additional.css">
 </head>
   <body>
     <div class="col-lg-8 mx-auto p-3 py-md-5">
@@ -33,8 +34,17 @@
 </header>
       <div class="row g-5 mb-5">
   <div class="col-md-6">
-    <h3 class="fw-bold">Research</h3>
-    <p>Lalalalalallaal lalalalal</p>
+    <h3 class="fw-bold">About dataset</h3>
+    <p>This dataset has been created for age and gender recognition tasks. The key features of this dataset are as follows:</p>
+
+<ul>
+  <li>Near perfect balance for all ages up to 80 years, achieved by balancing ages and genders within each age group with a step of 5.</li>
+  <li>It includes a total of 67,159 images featuring 84,192 individuals.</li>
+  <li>The images do not have any ground truths, and the answers have been manually created by human annotators.</li>
+  <li>The aggregation method used in this dataset achieved a mean absolute error (MAE) of 3.47 for human annotators, as per statistics from control tasks.</li>
+  <li>The dataset contains minimal celebrity data, thus reflecting real-world, in-the-wild scenarios.</li>
+  <li>The license for this dataset is CC 2.0. Feel free to use it for any purpose, but please remember to cite.</li>
+</ul>
 
   </div>
   <div class="col-md-6">
@@ -44,15 +54,26 @@
 
 <div class="row g-5 mb-5">
   <div>
-    <h3 class="fw-bold border-bottom pb-3 mb-5">Publications</h3>
-    
-      
-        <p><a href="https://arxiv.org/pdf/1702.03044.pdf">Real-Time Age and Gender Estimation with Transformers from Face and Body Images in the Wild. Maksim Kuprashvich, Irina Tolstykh, SberDevices</a></p>
-      
-    
+    <h3 class="fw-bold border-bottom pb-3 mb-5">Related Work</h3>
+
+    <p><a href="https://arxiv.org/pdf/1702.03044.pdf">Real-Time Age and Gender Estimation with Transformers from Face
+        and Body Images in the Wild. Maksim Kuprashvich, Irina Tolstykh, SberDevices</a></p>
+    <br>
+
+    Please, cite us:
+
+    <pre class="highlight"><code>
+  @misc{lagnetwork,
+    title={Real-Time Age and Gender Estimation with Transformers from Face and Body Images in the Wild}, 
+    author={Maksim Kuprashevich and Irina Tolstykh},
+    year={2023},
+    eprint={0000.00000},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
+  }
+      </code></pre>
   </div>
 </div>
-
 
 <div class="row g-5 mb-5">
     <div>
