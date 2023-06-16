@@ -1,0 +1,30 @@
+datasets:
+
+- {
+  name: 'IMDB-clean <br> modified', 
+  images: 'https://github.com/yiminglin-ai/imdb-clean',
+  images_pic: '/assets/buttons/github.jpeg',
+  annotation: 'https://drive.google.com/file/d/17uEqyU3uQ5trWZ5vRJKzh41yeuDe5hyL/view?usp=sharing',
+  annotation_pic: '/assets/buttons/github.jpeg'
+  }
+- {
+  name: 'UTK Modified <br> [Random Split]', 
+  images: 'https://susanqq.github.io/UTKFace/',
+  images_pic: '/assets/buttons/github.jpeg',
+  annotation: 'https://drive.google.com/file/d/177AV631C3SIfi5nrmZA8CEihIt29cznJ/view?usp=sharing',
+  annotation_pic: '/assets/buttons/gdrive.jpg'
+  }
+- {
+  name: 'UTK Modified <br> [Paper Split]', 
+  images: 'https://susanqq.github.io/UTKFace/',
+  images_pic: '/assets/buttons/github.jpeg',
+  annotation: 'https://drive.google.com/file/d/17uEqyU3uQ5trWZ5vRJKzh41yeuDe5hyL/view?usp=sharing',
+  annotation_pic: '/assets/buttons/gdrive.jpg'
+  }
+- {
+  name: 'Lagenda', 
+  images: 'https://drive.google.com/file/d/1QXO0NlkABPZT6x1_0Uc2i6KAtdcrpTbG/view?usp=sharing',
+  images_pic: '/assets/buttons/gdrive.jpg',
+  annotation: 'https://drive.google.com/file/d/1mNYjYFb3MuKg-OL1UISoYsKObMUllbJx/view?usp=sharing',
+  annotation_pic: '/assets/buttons/gdrive.jpg'
+  }
