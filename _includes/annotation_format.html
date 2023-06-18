@@ -1,0 +1,22 @@
+<div class="row g-5 mb-5">
+    <div>
+        <h3 class="fw-bold border-bottom pb-3 mb-5">Annotation format</h3>
+        The annotation format is a simple .csv file, based on the original IMDB-clean dataset. The header is structured
+        as follows:
+        <pre class="highlight"><code>
+ img_name,age,gender,face_x0,face_y0,face_x1,face_y1,person_x0,person_y0,person_x1,person_y1        
+        </code></pre>
+        Each image can contain multiple answers, corresponding to the individuals present in the image.
+        <br>
+        If the age and gender fields have a value of <b>-1</b>, it indicates that there is <b>no ground truth answer</b>
+        for
+        the
+        person/face.
+        These bounding boxes are suitable only for detection tasks or for preparing age/gender estimation, as described
+        in our article.
+        <br>
+        Additionally, some samples <b>may not have a paired person for the face</b>, in which case the person
+        bounding box
+        coordinates will also be set to <b>-1</b>.
+    </div>
+</div>

@@ -18,7 +18,7 @@ datasets:
   name: 'UTK Modified <br> [Paper Split]', 
   images: 'https://susanqq.github.io/UTKFace/',
   images_pic: '/assets/buttons/github.jpeg',
-  annotation: 'https://drive.google.com/file/d/17uEqyU3uQ5trWZ5vRJKzh41yeuDe5hyL/view?usp=sharing',
+  annotation: 'https://drive.google.com/file/d/1Fo1vPWrKtC5bPtnnVWNTdD4ZTKRXL9kv/view?usp=sharing',
   annotation_pic: '/assets/buttons/gdrive.jpg'
   }
 - {

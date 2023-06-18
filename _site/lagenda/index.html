@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="/assets/libs/bootstrap/bootstrap.min.css">
   <script defer src="/assets/libs/fontawesome/all.min.js"></script>
   <link rel="stylesheet" href="/assets/css/main.scss">
-  <link rel="apple-touch-icon" sizes="152x152" href="/assets/layer_icon.png">
+  <link rel="layer-icon" sizes="152x152" href="/assets/layer_icon.png">
   <link rel="shortcut icon" href="/assets/favicon.ico">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap"
@@ -35,15 +35,17 @@
       <div class="row g-5 mb-5">
   <div class="col-md-6">
     <h3 class="fw-bold">About dataset</h3>
-    <p>This dataset has been created for age and gender recognition tasks. The key features of this dataset are as follows:</p>
+    <p>LAGENDA dataset has been created for age and gender recognition tasks. The key features of this dataset are as follows:</p>
 
 <ul>
-  <li>Near perfect balance for all ages up to 80 years, achieved by balancing ages and genders within each age group with a step of 5.</li>
-  <li>It includes a total of 67,159 images featuring 84,192 individuals.</li>
-  <li>The images do not have any ground truths, and the answers have been manually created by human annotators.</li>
-  <li>The aggregation method used in this dataset achieved a mean absolute error (MAE) of 3.47 for human annotators, as per statistics from control tasks.</li>
+  <li>Includes a total of <strong>67 159</strong> images from <a href="https://storage.googleapis.com/openimages/web/index.html">Open Images Dataset</a> featuring <strong>84 192</strong> individuals with ages from <strong>0</strong> to <strong>95</strong>.</li>
+  <li>Near perfect balance for all ages up to <strong>~65</strong> years, achieved by balancing ages and genders within each age group with a step of 5. See our paper for the details.</li>
+  <li>Each image contains a minimum of <strong>1</strong> face with an associated person. We also provide all the faces and persons that can be detected in every image using our detector. Please refer to the paper for more details.
+The images do not have any ground truth labels, and the answers have been manually created by <strong>human annotators</strong>. To the best of our knowledge, this is the first dataset of its kind.</li>
+  <li>The aggregation method used in this dataset achieved a mean absolute error (<strong>MAE</strong>) of <strong>3.47</strong> for human annotators, as per statistics from control tasks.</li>
   <li>The dataset contains minimal celebrity data, thus reflecting real-world, in-the-wild scenarios.</li>
-  <li>The license for this dataset is CC 2.0. Feel free to use it for any purpose, but please remember to cite.</li>
+  <li>The license for this dataset is <a href="https://creativecommons.org/licenses/by/2.0/">CC 2.0</a>. Do whatever you want, just remember to cite us.</li>
+  <li>We have additionally provided modifications of the IMDB-clean and UTK datasets, which have been annotated in the same manner for all persons and faces.</li>
 </ul>
 
   </div>
@@ -78,6 +80,12 @@
 <div class="row g-5 mb-5">
     <div>
         <h3 class="fw-bold border-bottom pb-3 mb-5">Downloads</h3>
+        You can use the buttons below to download datasets manually or visit our repository from the header of this page
+        in order to use
+        scripts.
+        <br>
+        Additionally, we offer there our awesome ready-to-use models and inference code!
+        <br>
         <table cellpadding="10" cellspacing="10">
             <tr style='text-align:center; vertical-align:middle'>
                 <th>Dataset</th>
@@ -102,7 +110,7 @@
             <tr>
                 <td>UTK Modified <br> [Paper Split]</td>
                 <td><a href="https://susanqq.github.io/UTKFace/"><img width="100" height="50" src="/assets/buttons/github.jpeg"></a></td>
-                <td><a href="https://drive.google.com/file/d/17uEqyU3uQ5trWZ5vRJKzh41yeuDe5hyL/view?usp=sharing"><img width="100" height="50" src="/assets/buttons/gdrive.jpg"></a>
+                <td><a href="https://drive.google.com/file/d/1Fo1vPWrKtC5bPtnnVWNTdD4ZTKRXL9kv/view?usp=sharing"><img width="100" height="50" src="/assets/buttons/gdrive.jpg"></a>
                 </td>
             </tr>
             
@@ -116,22 +124,52 @@
         </table>
     </div>
 </div>
+
+<div class="row g-5 mb-5">
+    <div>
+        <h3 class="fw-bold border-bottom pb-3 mb-5">Annotation format</h3>
+        The annotation format is a simple .csv file, based on the original IMDB-clean dataset. The header is structured
+        as follows:
+        <pre class="highlight"><code>
+ img_name,age,gender,face_x0,face_y0,face_x1,face_y1,person_x0,person_y0,person_x1,person_y1        
+        </code></pre>
+        Each image can contain multiple answers, corresponding to the individuals present in the image.
+        <br>
+        If the age and gender fields have a value of <b>-1</b>, it indicates that there is <b>no ground truth answer</b>
+        for
+        the
+        person/face.
+        These bounding boxes are suitable only for detection tasks or for preparing age/gender estimation, as described
+        in our article.
+        <br>
+        Additionally, some samples <b>may not have a paired person for the face</b>, in which case the person
+        bounding box
+        coordinates will also be set to <b>-1</b>.
+    </div>
+</div>
+
+Please, feel free to contact us with any method from the footer:
       <footer class="pt-5 my-5 text-muted border-top">
   <div class="row">
     <div class="col-md-6 text-end social-media-icons">
       
-        <a href="https://github.com/LeNPaul" class="ms-3 fs-5"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/wildchlamydia/" class="ms-3 fs-5"><i class="fab fa-linkedin"></i></a>
       
-        <a href="https://twitter.com/paululele" class="ms-3 fs-5"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/%D0%B8%D1%80%D0%B8%D0%BD%D0%B0-%D1%82%D0%BE%D0%BB%D1%81%D1%82%D1%8B%D1%85-2a76111a2/" class="ms-3 fs-5"><i class="fab fa-linkedin"></i></a>
       
-        <a href="https://instagram.com/paululele" class="ms-3 fs-5"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/WildChlamydia" class="ms-3 fs-5"><i class="fab fa-facebook"></i></a>
       
-        <a href="https://linkedin.com/in/lenpaul" class="ms-3 fs-5"><i class="fab fa-linkedin"></i></a>
+      <a href="https://t.me/wild_chlamydia_work" class="ms-3 fs-5"><i class="fab fa-telegram"></i></a>
+      
+      <a href="https://t.me/IrinaKrasnova" class="ms-3 fs-5"><i class="fab fa-telegram"></i></a>
+      
+      <a href="mailto:mvkuprashevich@gmail.com" class="ms-3 fs-5"><i class="fa fa-envelope"></i></a>
+      
+      <a href="mailto:irinakr4snova@gmail.com" class="ms-3 fs-5"><i class="fa fa-envelope"></i></a>
       
     </div>
   </div>
 </footer>
-
     </div>
   </body>
 </html>
