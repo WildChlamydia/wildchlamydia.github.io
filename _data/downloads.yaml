@@ -1,11 +1,18 @@
 datasets:
 
 - {
+  name: '<b>Lagenda</b>', 
+  images: 'https://drive.google.com/file/d/1QXO0NlkABPZT6x1_0Uc2i6KAtdcrpTbG/view?usp=sharing',
+  images_pic: '/assets/buttons/gdrive.jpg',
+  annotation: 'https://drive.google.com/file/d/1mNYjYFb3MuKg-OL1UISoYsKObMUllbJx/view?usp=sharing',
+  annotation_pic: '/assets/buttons/gdrive.jpg'
+  }
+- {
   name: 'IMDB-clean <br> modified', 
   images: 'https://github.com/yiminglin-ai/imdb-clean',
   images_pic: '/assets/buttons/github.jpeg',
   annotation: 'https://drive.google.com/file/d/17uEqyU3uQ5trWZ5vRJKzh41yeuDe5hyL/view?usp=sharing',
-  annotation_pic: '/assets/buttons/github.jpeg'
+  annotation_pic: '/assets/buttons/gdrive.jpg'
   }
 - {
   name: 'UTK Modified <br> [Random Split]', 
@@ -22,9 +29,16 @@ datasets:
   annotation_pic: '/assets/buttons/gdrive.jpg'
   }
 - {
-  name: 'Lagenda', 
-  images: 'https://drive.google.com/file/d/1QXO0NlkABPZT6x1_0Uc2i6KAtdcrpTbG/view?usp=sharing',
-  images_pic: '/assets/buttons/gdrive.jpg',
-  annotation: 'https://drive.google.com/file/d/1mNYjYFb3MuKg-OL1UISoYsKObMUllbJx/view?usp=sharing',
+  name: 'FairFace', 
+  images: 'https://github.com/joojs/fairface',
+  images_pic: '/assets/buttons/github.jpeg',
+  annotation: 'https://drive.google.com/file/d/1EdY30A1SQmox96Y39VhBxdgALYhbkzdm/view?usp=sharing',
+  annotation_pic: '/assets/buttons/gdrive.jpg'
+  }
+- {
+  name: 'Adience', 
+  images: 'https://talhassner.github.io/home/projects/Adience/Adience-data.html',
+  images_pic: '/assets/buttons/github.jpeg',
+  annotation: 'https://drive.google.com/file/d/1wS1Q4FpksxnCR88A1tGLsLIr91xHwcVv/view?usp=sharing',
   annotation_pic: '/assets/buttons/gdrive.jpg'
   }
