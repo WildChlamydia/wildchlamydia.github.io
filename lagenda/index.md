@@ -5,7 +5,7 @@ title: "Home"
 
 LAGENDA dataset has been created by [LayerTeam](https://developers.sber.ru/portal/products/layer) for age and gender recognition tasks. 
 
-The key features of this dataset are as follows:
+The key features of tgihis dataset are as follows:
 
 - Includes a total of **67 159** images from [Open Images Dataset](https://storage.googleapis.com/openimages/web/index.html) featuring **84 192** individuals with ages from **0** to **95**.
 - Near perfect balance for all ages up to **~65** years, achieved by balancing ages and genders within each age group with a step of 5. See our paper for the details.
