@@ -42,3 +42,10 @@ datasets:
   annotation: 'https://drive.google.com/file/d/1wS1Q4FpksxnCR88A1tGLsLIr91xHwcVv/view?usp=sharing',
   annotation_pic: '/assets/buttons/gdrive.jpg'
   }
+- {
+  name: 'AgeDB', 
+  images: 'https://ibug.doc.ic.ac.uk/resources/agedb/',
+  images_pic: '/assets/buttons/github.jpeg',
+  annotation: 'https://drive.google.com/file/d/1Dp72BUlAsyUKeSoyE_DOsFRS1x6ZBJen/view?usp=sharing',
+  annotation_pic: '/assets/buttons/gdrive.jpg'
+  }
